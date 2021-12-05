@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalculatorController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="97.0" prefWidth="397.0">
+               <children>
+                  <Button fx:id="but_clear" cancelButton="true" defaultButton="true" mnemonicParsing="false" onAction="#clear" prefHeight="33.0" prefWidth="86.0" text="clear" textOverrun="LEADING_ELLIPSIS">
+                     <VBox.margin>
+                        <Insets left="320.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="show_result" prefHeight="21.0" prefWidth="384.0">
+                     <font>
+                        <Font name="Courier New" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="input" prefHeight="32.0" prefWidth="244.0" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Courier New" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button fx:id="bres" mnemonicParsing="false" onAction="#res" prefHeight="97.0" prefWidth="142.0" text="=">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <GridPane prefHeight="453.0" prefWidth="510.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="b7" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="161.0" prefWidth="147.0" text="7" textAlignment="CENTER">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="b8" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="161.0" prefWidth="147.0" text="8" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="b9" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="161.0" prefWidth="147.0" text="9" textAlignment="CENTER" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="bmulti" mnemonicParsing="false" onAction="#handleArithmeticAction" prefHeight="161.0" prefWidth="147.0" text="*" textAlignment="CENTER" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="b4" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="161.0" prefWidth="147.0" text="4" textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="b5" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="161.0" prefWidth="147.0" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="b6" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="161.0" prefWidth="147.0" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="bdivision" mnemonicParsing="false" onAction="#handleArithmeticAction" prefHeight="161.0" prefWidth="147.0" text="/" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="b1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="161.0" prefWidth="147.0" text="1" textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="b2" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="161.0" prefWidth="147.0" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="b3" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="161.0" prefWidth="147.0" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="bplus" mnemonicParsing="false" onAction="#handleArithmeticAction" prefHeight="161.0" prefWidth="147.0" text="+" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="bsign" mnemonicParsing="false" onAction="#sign" prefHeight="161.0" prefWidth="147.0" text="+/-" textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Courier New" size="37.0" />
+               </font>
+            </Button>
+            <Button fx:id="b0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="161.0" prefWidth="147.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="bdot" mnemonicParsing="false" onAction="#dot" prefHeight="161.0" prefWidth="147.0" text="." textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="bminus" mnemonicParsing="false" onAction="#handleArithmeticAction" prefHeight="161.0" prefWidth="147.0" text="-" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Courier New" size="52.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

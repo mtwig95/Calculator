@@ -17,6 +17,10 @@ the FXML file contains values such as -Infinity, these are default values for th
 
 * Make sure the fxml file in the bin directory and the java filesin the src directory.
 
+```bash
+java -jar q2.jar
+```
+
 ### Preview
 
 
